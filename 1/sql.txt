@@ -1,0 +1,1 @@
+select u1."ID", u1."UserName", (select "UserName" from "USER" where "ID" = u1."Parent") as ParentUserName from "USER" u1
